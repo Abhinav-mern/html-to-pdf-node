@@ -1,0 +1,86 @@
+<!-- views/AestheticTemplate.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic PDF Template</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+
+    .info-box {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .content-box {
+      width: 30%;
+      background-color: #ecf0f1;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aesthetic PDF Template</h1>
+  </header>
+
+  <div style="background-color: #ff0000;" class="info-box">
+    <p>Name: <%= username %></p>
+  </div>
+
+  <div class="content-container">
+    <div class="content-box">
+      <h2>Section 1</h2>
+      <p>Random content for Section 1.</p>
+    </div>
+
+    <div class="content-box">
+      <h2>Section 2</h2>
+      <p>Random content for Section 2.</p>
+    </div>
+
+    <div class="content-box">
+      <h2>Section 3</h2>
+      <p>Random content for Section 3.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Aesthetic PDF Template</p>
+  </footer>
+</body>
+</html>
